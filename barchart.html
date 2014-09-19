@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<title>Hello World</title>
-		<link href="stylesheet.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="d3.v3.min.js"></script>
+		<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/d3.v3.min.js"></script>
 		<style>
 			.legend {
 				font-size: 12px;
@@ -85,7 +85,7 @@
 				.attr('class','percent');
 
 			// Grab data from csv file
-			d3.csv('weekdays.csv', function(error,dataset){
+			d3.csv('docs/weekdays.csv', function(error,dataset){
 				dataset.forEach(function(d){
 					d.count = +d.count;
 					d.enable = true;
